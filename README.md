@@ -1,6 +1,6 @@
 ## Blog-Pessoal-Angular-Front
  - Este repositório conterá o meu projeto BlogPessoal feito com o Framework Angular
- - This project was generated with Angular CLI version 11.2.3.
+ - This project was generated with Angular CLI version 14.16.0
 ## Development server
 - Run `ng serve` for a dev server. Navigate to `http://localhost:4200/.` The app will automatically reload if you change any of the source files.
 ## Code scaffolding
