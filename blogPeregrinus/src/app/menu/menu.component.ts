@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faEdit, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-menu',
@@ -12,4 +13,6 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  faEdit = faEdit;
+  faSignOutAlt = faSignOutAlt;
 }
