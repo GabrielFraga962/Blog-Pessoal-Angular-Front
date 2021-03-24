@@ -37,7 +37,7 @@
                     <div class="form-group">
                         <label for="senha">Senha</label>
                         <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha"
-                            id="senha" placeholder="Digite sua senha">
+                            id="senha" placeholder="Digite sua senha"> <!--O input sever para realizar um evento, ou seja, recebe a informação que está sendo imputada nele, no caso a senha-->
                     </div>
                     <!--Validação da Senha-->
                     <div class="form-group">
@@ -47,7 +47,7 @@
                     </div>
                     <!--Tipo de cadastro e acesso ao sistema-->
                     <div class="form-group">
-                        <label for="confirmSenha">Tipo de Usuário</label>
+                        <label for="confirmSenha">Tipo de Usuário</label><!--O chance muda um evento imputado-->
                         <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
                             <option> Selecione um tipo de usuário: </option>
                             <option value="normal">Normal</option>
