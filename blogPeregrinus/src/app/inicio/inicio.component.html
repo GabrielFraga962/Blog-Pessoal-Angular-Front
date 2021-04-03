@@ -43,9 +43,7 @@
                 aria-controls="nav-minhasPostagens" aria-selected="false">Minhas postagens</a>
 
             <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab"
-                href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por
-                tema</a>
-
+                href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por tema</a>
         </div>
         <br>
     </nav>
@@ -81,7 +79,9 @@
                                 {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
                             </small></p>
 
-                            
+                        <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
+                        <a [routerLink]="['/postagem-delete', item.id]" class='text-danger' href="">Apagar</a>
+
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                                 {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
                             </small></p>
 
-                            <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
+                        <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
 
                     </div>
                 </div>
@@ -137,12 +137,10 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um
-                            novo</a>: </label>
+                    <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo</a>: </label>
                     <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
                         <option *ngFor='let item of listaTemas' value="{{item.id}}">{{item.descricao}}</option>
                     </select>
-
                 </div>
 
             </div>
