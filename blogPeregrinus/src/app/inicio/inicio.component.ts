@@ -68,7 +68,7 @@ export class InicioComponent implements OnInit {
   }
 
   publicar(){
-    this.tema.id = this.idTema
+    this.tema.id = this.idTema // Especifica o tema que eu quero quando pesquiso
     this.postagem.tema = this.tema
 
     this.user.id = this.idUser
@@ -77,8 +77,8 @@ export class InicioComponent implements OnInit {
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
       alert('Postagem realizada com sucesso!')
-      this.postagem = new Postagem()
-      this.getAllPostagens()
+      this.postagem = new Postagem() //Limpa os campos para permiti uma nova postagem
+      this.getAllPostagens() // Lista todas as postagens novamente
     })
   }
 

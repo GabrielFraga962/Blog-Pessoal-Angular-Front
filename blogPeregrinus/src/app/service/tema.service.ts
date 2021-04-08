@@ -9,10 +9,10 @@ import { Tema } from '../model/Tema';
 })
 export class TemaService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { }// O HttpClient é o que dar acesso aos métodos http
 
   token = {
-    headers: new HttpHeaders().set('Authorization', environment.token)
+    headers: new HttpHeaders().set('Authorization', environment.token)//O método HttpHeaders permite o acesso a minha requisição
   }
 
   getAllTema():Observable<Tema[]> {
