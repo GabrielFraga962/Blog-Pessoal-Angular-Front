@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '../model/User';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -16,7 +17,8 @@ export class CadastrarComponent implements OnInit {
   //Injeção de dados que estou usando - da service
   constructor(
     private authService: AuthService,
-    private router: Router // O roteamento de recursos permite que você declare rapidamente todas as rotas comuns para um determinado controlador de recursos. (auth.service) navegação das rotas/portas
+    private router: Router,
+    private alertas: AlertasService // O roteamento de recursos permite que você declare rapidamente todas as rotas comuns para um determinado controlador de recursos. (auth.service) navegação das rotas/portas
 
   ) { }
   //Faz o carregameto dos componentes da pagina - no caso as coordenadas da mesma
@@ -44,7 +46,7 @@ export class CadastrarComponent implements OnInit {
             this.authService.cadastrar(this.user).subscribe((resp: User) => { // interação do front e back
             this.user=resp
             this.router.navigate(['/entrar'])// rota criada no back-end
-            alert('Usuário cadastrado com sucesso!')
+            this.alertas.showAlertSuccess('Usuário cadastrado com sucesso!')
           })
     }
 
