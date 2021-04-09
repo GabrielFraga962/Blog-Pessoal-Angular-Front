@@ -37,4 +37,14 @@ export class AuthService {
     }
     return ok
   }
+
+  adm(){// Metodo para saber se o usuario é adm
+    let ok: boolean = false
+
+    if(environment.tipo == 'adm'){
+      ok = true
+    }
+    return ok
+
+  }
 }
