@@ -32,6 +32,7 @@ export class EntrarComponent implements OnInit {
       environment.nome = this.userLogin.nome
       environment.foto = this.userLogin.foto
       environment.id = this.userLogin.id
+      environment.tipo = this.userLogin.tipo
 
       //Caso eu queira mostrar no console do inspecionar (opcional)
       console.log(environment.token)
