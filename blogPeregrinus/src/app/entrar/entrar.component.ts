@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';//preciso adcionar o prod
 import { UserLogin } from '../model/UserLogin';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -15,7 +16,8 @@ export class EntrarComponent implements OnInit {
 
   constructor(
     private auth: AuthService,
-    private router: Router
+    private router: Router,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
@@ -31,7 +33,7 @@ export class EntrarComponent implements OnInit {
       environment.foto = this.userLogin.foto
       environment.id = this.userLogin.id
 
-      //Caaso eu queira mostrar no console do inspecionar (opcional)
+      //Caso eu queira mostrar no console do inspecionar (opcional)
       console.log(environment.token)
       console.log(environment.nome)
       console.log(environment.id)
@@ -40,7 +42,7 @@ export class EntrarComponent implements OnInit {
       this.router.navigate(['/inicio'])
     }, erro =>{
       if(erro.status == 500){
-        alert('Usuário ou senha estão incorretos!')
+        this.alertas.showAlertDanger('Usuário ou senha estão incorretos!')
       }
     })
 
