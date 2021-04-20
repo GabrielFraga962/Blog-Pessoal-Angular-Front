@@ -1,5 +1,5 @@
 ## Blog-Pessoal-Angular-Front
- - Link do Site no Hiroku: [blogPessoal-Peregrinus](https://blog-nat-generation.herokuapp.com/#/entrar)
+ - Link do Site no Heroku: [blogPessoal-Peregrinus](https://blog-nat-generation.herokuapp.com/#/entrar)
  - Código do BackEnd: [backend](https://github.com/GabrielFraga962/CRUD-Back-end-Projetos/tree/main/BlogPessoal)
  - Documentação do projeto: [doc-blog Pessoal](https://gabrielfraga962.github.io/doc-blogPessoal.v2/).
  - Este repositório conterá o meu projeto BlogPessoal feito com o Framework Angular
