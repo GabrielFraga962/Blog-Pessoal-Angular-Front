@@ -3,6 +3,9 @@
  - Código do BackEnd: [backend](https://github.com/GabrielFraga962/CRUD-Back-end-Projetos/tree/main/BlogPessoal)
  - Documentação do projeto: [doc-blog Pessoal](https://gabrielfraga962.github.io/doc-blogPessoal.v2/).
  - Este repositório conterá o meu projeto BlogPessoal feito com o Framework Angular
+
+![Blog Peregrinus](https://i.imgur.com/LpNuVul.png)
+
  - This project was generated with Angular [CLI version](https://github.com/angular/angular-cli) 14.16.0
 ## Development server
 - Run `ng serve` for a dev server. Navigate to `http://localhost:4200/.` The app will automatically reload if you change any of the source files.
@@ -19,5 +22,3 @@
 ## See the project documentation at:
 - [doc-blog Pessoal](https://gabrielfraga962.github.io/doc-blogPessoal.v2/).
 
-
-[![Blog Peregrinus](https://i.imgur.com/LpNuVul.png)
