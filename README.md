@@ -1,11 +1,15 @@
 ## Blog-Pessoal-Angular-Front 📝
 
+---
+
  - Link do Site no Heroku: [blogPessoal-Peregrinus](https://blog-pessoal-peregrinus.herokuapp.com/#/entrar)
  - Código do BackEnd: [backend](https://github.com/GabrielFraga962/CRUD-Back-end-Projetos/tree/main/BlogPessoal)
  - Documentação do projeto: [doc-blog Pessoal](https://gabrielfraga962.github.io/doc-blogPessoal.v2/).
  - Este repositório conterá o meu projeto BlogPessoal feito com o Framework Angular
 
 - This project was generated with Angular [CLI version](https://github.com/angular/angular-cli) 14.16.0
+
+---
 
 # Como Começar 🛠️
 
@@ -22,12 +26,18 @@
 ## Further help
 - To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+---
+
 ## See the project documentation at: 📑
 - [doc-blog Pessoal](https://gabrielfraga962.github.io/doc-blogPessoal.v2/).
+
+---
 
 # Resultado final 🖼️
 
 ![Blog Peregrinus](https://i.imgur.com/LpNuVul.png)
+
+---
 
 # Licença 📑
 
